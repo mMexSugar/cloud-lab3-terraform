@@ -1,0 +1,12 @@
+.terraform/
+
+# Файли стану (ми зберігаємо їх у GCS, але локальні копії ігноруємо)
+*.tfstate
+*.tfstate.*
+
+# Файли зі змінними (якщо там будуть секрети)
+*.tfvars
+*.tfvars.json
+
+.terraform.lock.hcl
+crash.log
